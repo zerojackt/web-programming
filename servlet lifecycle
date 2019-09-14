@@ -1,0 +1,11 @@
+
+1.  init() - LifecycleServlet 이 실행된후 call 된다. 한번 call 되면 다음부터는 call X
+
+                destroy 가 된후에 다시 불러져서 call 한다.
+
+2.  service - LifecycleServlet > init > 후에 call 된다. 한번 call 이 된후에는 계속 service 만 호출한다.
+
+3.  destroy() - WAS 가 종료되거나 web application 이 새롭게 갱신될떄 실행된다
+
+
+servlet   :   init -> servcie ( Requset, Response ) -> Desrtoy
