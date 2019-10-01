@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans:300&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Lemonada|Quattrocento&display=swap');
 img {
     width: 30px;
     
@@ -8,44 +8,54 @@ img {
     margin-right: auto;
     margin-bottom: 10px;
 }
-#title {
+
+.title {
+    
+    
+    margin-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+     
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
-   width: 700px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    color: rgb(235, 208, 174);
-    text-shadow: 2px 2px rgb(248, 216, 216);
-    border-top-width: 500px;
-    border-top : 1px solid rgb(238, 226, 211);
-    border-bottom: 1px solid rgb(243, 227, 207);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-top-color: bisque;
+    border-bottom-color: bisque;
     
     
-    
-    padding-top: 50px;
-    padding-bottom: 30px;
+    font-family: 'Lemonada', cursive;
+    font-size: 35px;
+    color: rgb(255, 206, 147);
+    text-shadow: 1px 2px rgb(250, 222, 193);
 
+    
 }
+
 
 #have {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    size: 10px;
+    font-size: 13px;
     color: rgb(235, 192, 140);
-    border: 1px solid rgb(240, 228, 218);
+    border: 1px solid bisque;
     border-style: double;
-    width: 200px;
+    width: 180px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 #menu {
+
     background: rgb(252, 235, 204);
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 #menu > p {
     color: rgb(124, 74, 74);
@@ -55,4 +65,95 @@ img {
     font-family: 'Open Sans', sans-serif;
     
     
+}
+
+#contents {
+    margin-top: 80px;
+}
+
+.top-contents {
+    font-family: 'Open Sans', sans-serif;
+    border-top-color: bisque;
+    border-top-style: dotted;
+    
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(124, 74, 74);
+    margin-bottom: 20px;
+    
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+   
+
+    
+    
+}
+.mid-left-contents, .mid-right-contents{
+      border: 1px solid rgb(252, 235, 204);
+      width: 280px;
+      height: 300px;
+      margin-bottom: 100px;
+}
+.mid-left-contents {
+   float: left;
+   margin-left: 300px; 
+   
+}
+
+.mid-left-child-contents {
+    margin-top: 10px;
+}
+
+.mid-right-contents {
+    float: right;
+    margin-right: 25%; 
+
+}
+
+.mid-right-child-contents {
+    margin-top: 10px;
+    
+}
+
+.mid-right-child-title, .mid-left-child-title {
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+    color: rgb(235, 192, 140);
+}
+
+.mid-left-child-contents, .mid-right-child-contents {
+    
+    font-size: 13px;
+    
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-right: 8px;
+    font-family: 'Open Sans', sans-serif;
+
+    
+}
+
+#top-child-recommend {
+    font-size: 10px; 
+    color: rgb(253, 195, 123);
+    text-align: center;
+}
+
+#footer {
+    
+    
+}
+footer div {
+    margin: 20px;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    clear: both;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
