@@ -1,0 +1,8 @@
+redirect 는 client 가 servlet1 한테 request 하고
+다시 server 가 servlet2 주소를 주면서 request 하고
+그걸 보고 client 가 servlet2 한테 새로운 request , response 를 만드는 형태이다
+
+forward 는 client 가 servlet1 한테 request 하고
+servlet1 이가 forward - > serlvet2 한테 하면 servlet 2가 client 한테
+response 해준다. ( 한번만 request, response 객체를 만들고 url 이 바뀌지 않는다 )
+
