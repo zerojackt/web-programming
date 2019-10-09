@@ -1,0 +1,4 @@
+- application scope 
+ServletContent 로 getServletContent 해서 이용한다.
+servlet , jsp .. 로 get set 하면서 쓸수있다.
+server 를 종료하면 사라지고 다시 생긴다.
