@@ -1,0 +1,10 @@
+i learn about the EL( expression language )
+
+$ { } - use it
+
+request.getAttribute("id") -> ${id}
+it is so simple and look like easy.
+
+
+
+
