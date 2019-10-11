@@ -1,0 +1,9 @@
+jstl
+- java code 를 tag 처럼 보기쉽게.. 해주는 걸 배웠다.
+- 따로 설치가 파일을 넣어줘야 한다 and <%@ taglib ... 으로 jsp 한테 알려줘야한다.
+
+- <c:set var="variable" scope="request" value="Name" > 이런식으로 쓴다
+
+- set, remove
+- if 조건문 
+- choose 는 마치 else if ... else 처럼 작동하는 choose, when, otherwise 를 사용한다.
