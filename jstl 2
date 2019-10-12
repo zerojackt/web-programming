@@ -1,0 +1,11 @@
+jstl 의  문법
+
+- forEach
+   for 문같은 것
+   
+- import, redirect
+  uri 을 띄우는 것
+
+- out
+  js 를 동작하여 띄울수있는 것?
+   true 가 기본값이며 true일때 동작하게 한다 false 이먄 그냥 js 가 문자로 줄줄이 나온다
