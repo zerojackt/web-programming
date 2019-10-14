@@ -1,0 +1,6 @@
+MySQL
+- command 사용하는 법
+- make a user account
+- setting
+-  >mysql -hlocalhost -u -p 
+- selcet version(), current_date;
