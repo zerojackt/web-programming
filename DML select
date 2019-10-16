@@ -1,0 +1,11 @@
+DML
+
+- select, insert, update, delete
+
+-select
+select empno, name from employee;
+select distinct empno from employee;
+select concat(A,'-',B) name from employee;
+select empno, name from employee order by name;
+select empno, name from employee order by name desc;
+select * from employee;
