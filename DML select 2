@@ -1,0 +1,30 @@
+* select
+
+-upper 다 대문자
+-lower 다 소문자
+-substring 글자 끊어주기
+-lpad, rpad 남은공간 채워주기
+- trim 공백 제거
+- abs 절대값
+- mod(n,m) % 나머지값
+
++ where: 특정행을 검색
+ select * from employee where empno=123;
+ 
+  + where in 
+   select * from employee where deptno in (1, 3);
+   
+   - and or
+   select * from employee where deptno = 1 or deptno = 3;
+   
+   - <, >
+   select * from employee where deptno >20;
+   
+  + where like
+    ㄴ %, _ 사용한다
+    
+    select name from employee where name like 'a%';
+    select name from employee where name like '_a%';
+    
+    
+  
