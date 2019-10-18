@@ -1,0 +1,10 @@
+cast
+- 형변환
+-select cast(1-2 as unsigned);
+
+group function
+- count, min, max, avg ...
+- select count(*) from employee;
+
++ group by
+- select name, avg(salary), min(salary) from employee group by salary;
