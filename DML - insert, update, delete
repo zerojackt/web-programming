@@ -1,0 +1,16 @@
+DML
+
+- insert
+  : add a data
+  insert into role values(200,id);
+  insert into role(role_id) values(200);
+
+- update
+  : update a data
+  update role 
+   set id=200
+  where description='teacher';
+  
+  - where 은 생략가능하지만 없으면 모든 row 에 적용된다는 점
+- delete
+ delete from role where role_id=200;
