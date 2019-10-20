@@ -1,0 +1,15 @@
+
+- create table
+  create table table_name ( 
+  field_name1 type, field_name2 type, field_name3 type .. );
+  
+- alter table
+  add, drop
+  
+- change column
+  alter table table_name
+    change
+  
+- rename table
+   + alter table table_name rename column_name new_column_name
+   
