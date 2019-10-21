@@ -1,0 +1,4 @@
+maven 설정하기 ...
+- 온갖 버전과 error 와 싸우고 server 가 실행됐다 ( server 를 삭제하고 다시 설정해서 다른 server 도 날아갔다 )
+- pom.xml 에 jstl 도 추가하고 servlet 도 추가한다.
+- scope 는 compile, runtime, provided, test 가 있다.
