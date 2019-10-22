@@ -1,0 +1,10 @@
+JDBC
+- java and database 을 connection 해준다
+
+1.import
+2.driver load
+3.connection
+4. statement
+5.질의수행
+6. ResultSet 으로 결과받기
+7. close
