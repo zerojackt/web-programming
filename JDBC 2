@@ -1,0 +1,13 @@
+1. pom.xml 에 plugin 추가, version
+2. table 중의  role 을 이용할거다, 이의 정보를 담아줄 class 를 하나 만든다. name 은 Role
+3. role 의 columns 을 private 로 선언해준다.
+4. 이 둘을 getter and setter , toString + a
+5. table 에 정보를 입력하거나 삭제 할수있는 class 를 만든다. name 은 RoleDao
+6. Role 로 getRole method 하나 만든다. integer 로  roleId 를 return 하게 한다.
++ Role role = null , Connection conn = null;, PrePareStatement ps = null, ResultSet rs =null; return roleId;
++ exception 처리
++ finally 에 close 를 넣어주면 된다. 이때 if ( rs != null ) { try {rs.close();}catch(SQLException e) .... 으로 conn, ps 로 해준다.
++ driver load 를 해야한다 ( 맨위 exception 처리 할때의 try 에서 )
++ Connection object 를 얻는다
++ 위를 이용해 statement 를 얻어온다
++ 그안 sql 에 query 문을 작성한다 select role_id ... from ... where role_id =?
