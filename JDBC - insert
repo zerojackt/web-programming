@@ -1,0 +1,49 @@
+public int addRole( Role role ) {
+
+  int insertCount = 0;
+  
+  Connection conn = null;
+  PrepareStatement ps = null;
+  
+  try {
+  
+    Class.forName("com.mysql.jdbc.cj.Driver");
+    conn = DriverManger.getConnection(dburl,dbUser,dbpassword);
+    
+    String sql = "insert into role (role_id, description) values ( ?, ?); ";
+    ps = conn.PrepareStatement(sql);
+    
+    ps.SetInt(1,role_id);
+    ps.SetString(2,description);
+    
+    insertCount = ps.executeUpdqte();
+    
+  
+  
+  
+  }catch (Exception e) {
+  
+  }finally {
+  
+     if ( ps != null ) { 
+  
+       try { 
+           ps.close();
+      }catch (Exception e) {
+  
+      }
+      
+       if ( conn != null ) { 
+  
+       try { 
+          conn.close();
+      }catch (Exception e) {
+  
+      }
+   
+  }
+  
+  }
+  
+  return insertCount;
+}
