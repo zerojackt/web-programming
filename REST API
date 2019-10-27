@@ -1,0 +1,19 @@
+Rest API : tistory 에서 글을 저장하거나, 조회할수있도록 제공하는 것
+
+
+Rest 가 지켜야할 style
+
+- client-server
+- stateless
+- cache
+- uniform interface
+- layered system
+- code-on-demand (optional)
+
+
+uniform interface 의 style
+
+- resource 가 URI 로 식별되어야 한다
+- resource 를 생성, 수정, 추가하고자 할때 HTTP  message 에 표현을 해서 전송해야한다.
+- message 는 스스로 설명할수있어야 한다. (Self-descriptive message)
+- application 의 상태는 Hyperlink  이용해 전이되야 합니다 (HATEOAS
