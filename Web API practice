@@ -1,0 +1,25 @@
+src > main > create java folder ( package, class ... )
+
+make a package ( name is ... api )
+copy the jdbcexam.dto and jdbcexam.dao -> paste src/main/java
+
+src/main/java > ..api apckage > new > servlet
+servlet name : rolesServlet
+mapping : roles
+override : doGet
+
+doGet ( ) ... {
+
+  response.setCharacterEncoding("utf-8:);
+  response.setContentType("application.json");
+  
+  RoleDao dao = new RoleDao();
+  List<Role> lis = dao.getRoles();
+  
+  ObjectMapper objectmapper = new ObjectMapper();
+  String json = objectmapper.writeValuesAsString(lis);
+  
+  PrintWirter out = response.getWirter();
+  out.println(json);
+  out.close();
+}
