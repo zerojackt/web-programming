@@ -1,0 +1,23 @@
+mapping
+1. web.xml 에서 하는법
+   안에 
+   <servlet>
+	  <servlet-name>helloWorld</servlet-name>
+	  <servlet-class>com.javalec.ex.HelloWorld</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>helloWorld</servlet-name>
+   <url-pattern>/hworld</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+- 위를 추가해서 url-pattern 안에 있는 것을 바꾸면된다.
+
+2. annotation 이용하기
+
+ src > new > servlet 하면
+ 그 안에 @WebServlet("/hw") 이게 생긴다
+ 이게 annotation 인데 이 안에 있는걸 바꾸면 된다.
+ 
+ 
