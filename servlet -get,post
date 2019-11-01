@@ -1,0 +1,15 @@
+GET
+- doGet
+
+POST
+- doPost
+- html 내에서 from tag 의 method 가 post 임
+  action 을 이용해서 연결된다
+  
+  servlet mapping 을 /PM 으로 하고 
+  <form action="PostMethod" method="post">
+        <input type="submit" value="post">
+    </form>
+  
+  webContent 안에 저 html 을 넣어준다
+  그리고 running 하면 sumbit 을 누르면 servlet 의 PM 으로 넘어오게된다
