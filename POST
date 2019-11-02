@@ -1,0 +1,19 @@
+from tag 에 있는 것을 servlet 으로 get 하는 법
+
+input 안에 있는 name 이 중요하다
+
+doPost 안에
+- request.getParameter("name") 으로 get 할수있다
+
+여러개는
+- request.getParameterValues("names") 로 하면된다
+
+이떄 반환값은 String 이다.
+
+checkbox 로 여러개를 
+String[] names = request.getParameterValues("names");
+을 하면 out.println 할때는
+Arrays.toString(names) 로 해줘야한다.
+
+
+
