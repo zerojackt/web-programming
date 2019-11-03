@@ -1,0 +1,37 @@
+servlet reset parameter
+
+1. web.xml 에 기술하기
+mapping tag 가 있고 servlet tag 안에 다가 init-param tag 를 해준다.
+<init-param>
+	    <param-name>id</param-name>
+	    <param-value>abcedf</param-value>
+	  </init-param>
+    
+    
+2. @webServlet 에서 하기
+@WebServlet(urlPatterns = {"/initp"}, initParams= {@WebInitParam(name = "id",value = "zerojack" ),@WebInitParam(name = "pw",value = "1234")})
+
+- getInitParameter 사용하기
+
+
+
+web application 감시하기
+- ContextListener
+-  임의의 class 를 만들어 ServletContextListener 을 implemnets 해준다
+그리고 override 로 두개 해준다. 
+1. web.xml 에 명시하기
+<listener>
+<listen-class> </listen-class> 
+</listener>
+
+2. @webListener 로 하기
+
+여러 servlet 에서 특정 data 를 불러오기
+- web.xml 에 context-param tag 쓰기
+<context-param>
+	    <param-name>id</param-name>
+	    <param-value>abcedf</param-value>
+</context-param>
+
+-getServletContext().getInitParameter 사용하기
+    
