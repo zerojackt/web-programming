@@ -1,0 +1,16 @@
+- request
+request.getParameter
+request.getParameterValues
+
+request.addCookie, getContextPath, getMethod, getSession, getProtocol, getRequestURI...
+
+
+-response
+
+response.sendRedirect(....jsp)
+: 일때 if 문으로 pass or 아니면 else 로 nopass 로 Redircet 로 넘겨줄수있다.
+
+firstP.html -> secondP.jsp - if 문으로 갈라짐 ( age = 10 ) 10 이 맞으면 
+                                                                   -> pass.jsp
+                                                                else
+                                                                   -> nopass.jsp
