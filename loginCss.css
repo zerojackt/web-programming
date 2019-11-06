@@ -1,0 +1,67 @@
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+}
+
+img {
+    margin: 10px auto;
+}
+
+#sign {
+    font-size: large;
+
+}
+
+#toto {
+    margin-top: 5px;
+    font-size: small;
+}
+
+#main {
+   
+    width: 450px;
+    margin: 50px auto;
+}
+
+
+#mail{
+    width: 400px;height: 50px;
+    margin: 10px auto;
+    border-color: rgb(134, 179, 247);
+    border-radius: 5px;
+    color:  rgb(111, 165, 247);
+    font-size: small;
+    
+   
+}
+
+p {
+    text-align: left;
+    margin-left: 5px;
+   
+    color: rgb(111, 165, 247);
+}
+ #mail legend {
+      text-align: left;
+      
+ }
+
+ #em {
+    width: 430px;
+    height: 30px;
+    border-style: none;
+    text-align: left;
+    
+    
+ }
+
+ #sum {
+     color: white;
+     background: rgb(65, 136, 243);
+     border: none;
+     padding: 5px 15px;
+     border-radius: 3px;
+     float: right;
+ }
