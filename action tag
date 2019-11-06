@@ -1,0 +1,10 @@
+- forward
+<jsp:forward page="sub.jsp" />
+
+- param
+<jsp:param name="id" value="abcd" />
+
+- include
+include 01 page
+<jsp:include page="sub.jsp" />
+return include 01 page
