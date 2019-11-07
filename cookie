@@ -1,0 +1,40 @@
+
+= cookie
+
+1.Cookie cookie = New Cookie("id",id);
+2.cookie.setMaxAge(60);
+3.response.addCookie(cookie);
+
+
+= get cookie
+
+Cookie[] cookies = request.getCookies();
+
+  for(int i=0;i<cookies.leght;i++) {
+  
+    String str = cookies[i].getValue();
+    
+   if(str.equals("zero")) {
+        out.prinln("hello ! "+str);
+}
+}
+
+= delete cookie
+
+Cookie[] cookies = request.getCookies();
+
+if (cookies!=null) {
+  
+  for (int i =0;i<cookies.leght;i++) {
+  
+     String str = cookies[i].getValues();
+     
+     if(str.equals("zero")) {
+     
+        cookies[i].setMaxAge(0);
+        response.addCookies(cookies[i]);
+     }
+   }
+}
+
+sign in -> create cookie (setter and get ) -> (sign out ) -> delete cookie -> cookie test
