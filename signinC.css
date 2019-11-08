@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    /* Frame 1 */
+
+
+
+background: #FFFFFF;
+font-family: 'Open Sans', sans-serif;
+margin: 0px auto;
+
+}
+
+
+#sign {
+   
+    /* no account? sign up */
+    
+
+    width: 73px;
+    height: 30px;
+   
+    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    text-align: center;
+    margin: 0px auto;
+     margin-top:100px;
+    margin-bottom: 15px;
+    color: #871E7C;
+    
+}
+
+#pw {
+    /* password */
+
+    
+
+width: 54px;
+height: 15px;
+
+margin: 5px auto;
+margin-top: 20px;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+
+color: #871E7C;
+}
+
+#e {
+    
+
+width: 35px;
+height: 15px;
+margin: 0px auto;
+margin-top:20px;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+
+color: #871E7C;
+}
+
+#in1, #in2 {
+    
+    margin-left: 20px;
+    text-align: center;
+
+
+}
+
+#b {
+    /* Rectangle 1 */
+
+    margin: 0px auto;
+
+width: 200px;
+height: 150px;
+
+
+border: 1px solid #871E7C;
+border-radius: 15px;
+}
+
+
+#su {
+    position: relative;
+    
+    color: #871E7C;
+    
+    border:none;
+    
+
+}
+
+#left {
+    position: relative;
+    left: 41%;
+    font-size: small;
+    color: rgb(192, 123, 186);
+    
+}
