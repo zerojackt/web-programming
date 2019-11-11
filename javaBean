@@ -1,0 +1,13 @@
+bean
+: java code 를 반복없이 efficient 하게 사용하기 위한 것
+
+make bean
+: 
+1. make a java class
+2. if class name is Cat
+public Cat() {
+}
+3. class data 를 setter and getter 해준다
+
+bean action tag
+: useBean, setProperty, getProperty
