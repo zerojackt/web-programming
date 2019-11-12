@@ -1,0 +1,10 @@
+oracle 도 mysql 처럼 문법이 똑같았지만
+당황스러운 error 로 고진했다.
+하지만 접속방법은 -p -u .. 로 붙이지는 않고 바로 sqlplus id/pw 를 접속하는 convenient 했다
+
+- insert into .. values
+- delete from .. where
+- drop table
+- desc ..
+- select * from ...
+- update .. set .. where 
