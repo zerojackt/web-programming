@@ -1,0 +1,11 @@
+
+Cat cat = new Fish();이런식이라면
+<bean id="cat" class="com.example.app.Fish" />
+cat 은 id 에 Fish 는 + package name 과 같이 class 에 넣어주게된다
+
+Console console = new inlineconsole();
+<bean id="console" class="com..... .inlineconsole" />
+
+console.setCat(cat);
+이면 console tag 안에
+<property name="setCat -> set 떼고, 대문자를 소문자로 하면 -> cat" value or ref="cat">
