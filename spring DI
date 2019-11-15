@@ -1,0 +1,12 @@
+
+하나는 interface - class 관계로 했다
+Exam (inter) - newlecExam(Class) , ExamConsole(inter) - inlineExamConsloe, GridExamConsole(class)
+
+ApplicationContext context = new ClassPathXmlApplication("setting.xml")
+ExamConsole console = context.getBean(ExamConsole.class);
+console.print()
+
+이거 그냥 순 class 로 만들어서 그런가 조금씩 방법이 다른듯하다.. 이유는 정확히는 모르는중.
+String config = "classpath:applicationCTX.xml";
+AbstractApplicationContext ctx = new GenericXmlApplicationContext(config);
+MyCalculator myCalculator = ctx.getBean("myCalculator",MyCalculator.class);
