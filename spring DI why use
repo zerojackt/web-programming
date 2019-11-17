@@ -1,0 +1,13 @@
+spring 은 setter and getter 을 이용하거나 constructor 를 이용해서 주입해준다
+- constructor-arg tag 를 이용해서 생성한다
+- ctrl + space 를 사용하면 쉽게 constructor 를 만들수있다.
+
+
+spring DI 의 장점
+
+1. java code file 을 수정않고, spring bean .. xml file 만 수정하면 조립하거나 빼거나 할수있다.
+
+- mainClass, Pencil(interface), Pencil 을 implement 하는 Pnecil4B.6B,6BWithEr class 들을 만든다
+- 그리고 use() method 를 생성하고 강제 class 들한테 override 하라고 한다
+- setting.xml 에서 아래 하나만 입력하면 된다.
+   <bean id="pencil" class="com.javalec.ex.(여기있는 게 바뀌기만 하면 됨) />
