@@ -1,0 +1,27 @@
+DI 설정방법
+1. xml file
+2 java
+3 xml and java
+
+그 중 annotation 방법이 요즘하는거라 하더라..
+근데 보는 강좌가 xml 만 써서 ... 혼란이 온점이 아쉽다
+일단 아래가 정확하지 않을수있다는 점.
+
+- spring 설정이 이용되는 거라는 명시
+@Component
+public class ApplicationConfig
+
+- bean
+ @Bean
+public Student student1()
+ 
+- Constructor
+Student student = new Student("alice",12,hobbys);
+
+- setter 
+student.setName("alice");
+
+쓸때는 아래를 불러온다
+AnnotationConfigApplicationContext ctx = 
+           new AnnotationConfigApplicationContext(ApplicationConfig.class);
+ Student student1 = ctx.getBean("student1",Student.class);
