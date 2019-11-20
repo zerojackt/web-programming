@@ -1,0 +1,29 @@
+@Value
+:dedault value 를 지정할때 사용한다
+
+@Value("20")
+private int eng;
+
+
+@Component 는
+ 세부적으로 세가지로 되어있다 
+  1. @Service
+  2. @Controller
+  3. @Repository
+
+@Autowired 는
+
+1. on Properties 에 쓰거나 private Exam exam 
+2. on Setters 에 쓰거나 public setExam
+3. on Constructors 에 쓰거나 public Exam exam
+
++ 여기에 @Qualifier 도 있다
+이건 같이 사용해야한다.
+ - 이름이 똑같은 bean 이 두개 있을때 사용한다
+ @Qualifier("member2")
+ 
+ @Bean
+ 는 bean 을 설정해준다.
+ 
+ 
+ 
