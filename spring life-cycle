@@ -1,0 +1,27 @@
+
+spring container life cycle
+- create ( GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(); )
+- setting ( ctx.refresh() )
+- use ( Cat cat = ctx.getBean("cat", Cat.class ); 
+           cat.eat() )
+- close ( ctx.close() )
+
+
+spring bean life-cycle
+- 1 ) implements InitialiaingBean, DisposableBean
+     각각 init, destory 성격이 있는 듯
+     ctx.refresh 할때 init
+     ctx.close 할때 destory
+    
+     
+- 2 ) annotation 으로 하기
+    @PostConstruct ( init
+    @PreDestroy ( destory  을 사용한다
+    
+    위와 마찬가지로 
+    ctx.refresh 할때 init
+    ctx.close 할때 destory 한다.
+    
+    
+     
+
