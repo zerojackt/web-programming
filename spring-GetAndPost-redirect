@@ -1,0 +1,29 @@
++ Get
+- form method = get, RequestMethod.Get
+@RequestMapping(method = RequestMethod.GET, value = "/profile")
+
++ Post
+- form method = post, RequestMethod.POST
+
+
++ @ModelAttribute
+- change the command object name
+
+@RequestMapping("/informView")
+	public String takeInform(@ModelAttribute("inform") Informations informations) {
+		
+		return "informView";
+}
+
++ redirect:signNg
+- redirect yes..
+
+	@RequestMapping("red/signCheck")
+	public String sighChecked(HttpServletRequest req,Model model) {
+		String email = req.getParameter("email");
+		String pw = req.getParameter("pw");
+		if(email.equals("zero@gmail.com")&&pw.equals("1234")) {
+			return "redirect:signOk";
+		}
+		return "redirect:signNg";
+	}
