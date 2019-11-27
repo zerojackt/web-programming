@@ -1,0 +1,36 @@
++ spring validator 로 error 처리하기
+
+따로 Valitor class 를 만들어서 implement 해줘야한다
+
+controller 에서는
+
+@Validated 를 이용 & @InitBinder 을 이용한다
+아니면 
+
+ProfileVaildator profileVaildatorm = new ProfileVaildator();
+profileVaildatorm.validate(profileInfo, result);
+
+이렇게 불러와도 된다
+
+그리고 이런식으로 validator 하는 것과
+
+	- ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "trouble");
+		
+이런식으로 하는 법이 있다
+    
+	-	String profileId = profileInfo.getId();
+		if(profileId == null) {
+			errors.rejectValue("id", "trouble");
+		}
+
+
+@RequestMapping("/checking/signCheck")
+	public String intoCheck(@ModelAttribute("Info") @Validated ProfileInfo profileInfo, BindingResult result) {
+		
+		String page = "checking/signOk";
+		if(result.hasErrors()) {
+			page = "checking/signError";
+		}
+		return page;
+	}
+	
