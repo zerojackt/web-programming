@@ -1,0 +1,10 @@
+우선 oracle sql developer 을 깔아서
+oracle id 로 connect 하고
+table 을 만들어준다, + oracle 이라서  seq 을 만들어줘야한다
+
+그리고 틀을 잡는다
+
+controller, service(interface, classes ), dao, dto 로 구성할
+package 를 만들고 class, interface implement 할것을 만든다
+
+이제 작성할 시간이다
