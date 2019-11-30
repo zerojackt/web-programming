@@ -1,0 +1,17 @@
+list 는 ArrayList 로 담아주고
+BDate 는 Timestamp 로 선언한다
+
+service
+- commands 가 있다
+- delet, 게시글 수정, reply, replyView, .. 그리고 이걸 다 implement 하는 interface
+
+controller
+- commands 들의 requestMapping 을 하는 곳이다 and jsp page
+
+dao
+- database 를 connect 하고 data 를 넣고..수정..삭제..하게 하는 것
+
+dto
+- dao 에서 database 를 가지고왔다면 그 가지고 온걸 class 시키는 것이다
+  int bId..string bName.. 이렇게 선언하고 setter and getter 해준다
+  
