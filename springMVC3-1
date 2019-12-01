@@ -1,0 +1,96 @@
+table 에서도 중간중간 빼먹은 부분을 수정했다
+and Timestamp 는 java.sql.Timestamp bDate 으로 해야한다
+
+한글처리를 다시 다시 했다, eclipse and jsp page
+
+BDao 를 작성했다
+--------------------
+
+DataSource dataSource;
+	
+	
+	public BDao() {
+		
+		try {
+			
+			Context context = new InitialContext();
+			dataSource = (DataSource) context.lookup("java:comp/env/jdbc/Oracle11g");
+		
+		} catch (NamingException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+  
+  
+  // list 
+	
+	public ArrayList<BDto> list() {
+		
+		ArrayList<BDto> dtos = new ArrayList<BDto>();
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		
+		try {
+    
+    // connection, prepare.., resultSet
+    
+			connection = dataSource.getConnection();
+			String sql = "select bId,bName,bTitle,bDate,bStep,bContent,bHit,bGroup,bIndent from mvc_board order by bGroup desc, bStep asc ";
+			preparedStatement = connection.prepareStatement(sql);
+			resultSet = preparedStatement.executeQuery();
+			
+			while (resultSet.next()) {
+				int bId = resultSet.getInt("bId");
+				int bStep = resultSet.getInt("bStep");
+				int bHit = resultSet.getInt("bHit");
+				int bGroup = resultSet.getInt("bGroup");
+				int bIndent = resultSet.getInt("bIndent");
+				
+				String bName = resultSet.getString("bName");
+				String bTitle = resultSet.getString("bTitle");
+				String bContent = resultSet.getString("bContent");
+				
+				java.sql.Timestamp bDate = resultSet.getTimestamp("bDate");
+			  
+				BDto dto = new BDto(bId, bStep, bContent, bName, bTitle, bDate, bHit, bGroup, bIndent);
+			    dtos.add(dto);
+			}
+			
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			
+		}finally {
+    
+    // close all
+			
+				try {
+					if(resultSet != null) {
+					resultSet.close();	
+					}
+					if(preparedStatement != null) {
+						preparedStatement.close();	
+						}
+					if(connection != null) {
+						connection.close();	
+						}
+					
+					
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
+			
+			
+		}
+		
+		
+		return dtos;
+		
+	}
+
