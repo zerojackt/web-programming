@@ -1,0 +1,14 @@
+make it
+
++ modify
+- request.getParameter 로 name, title, content, id 
+- connection and prepare.. 을 이용
+- update set name =? , title =? ,content =? where id =?
+- no jsp page , mapping ok
+
++ delete
+- request 로 id 만
+- connection and prepar..
+- delete from -- where id
+- no jsp page, mapping ok
+
