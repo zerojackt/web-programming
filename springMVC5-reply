@@ -1,0 +1,16 @@
+
+make it
+
++ reply_view
+- reply_view.jsp ok. connect dto
+- connection, prepar.., resultSet ok
+- select * from all
+
+
+
++ reply
+- no jsp. 
+- connection, prepare..
+- replyShape method ok ( step + 1 )
+- prepare.set with name,id,content,step + 1,group + 1,indent
+- insert into 
