@@ -1,0 +1,42 @@
+
+1. setting
+pom.xml > + spring-jdbc
+bean setting or annotation
+
+BController >
+
+BCommand command;
+	
+	
+	public JdbcTemplate template;
+	
+	@Autowired
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+		Constant.template = this.template;
+	}
+	
+
+dao >
+
+private DataSource dataSource;
+	JdbcTemplate template = null;
+	
+	
+	public BDao() {
+		
+		template = Constant.template;
+		
+	}
+
+
+
+- create package, class
+in class 
+- public statice jdbcTemplate template;
+
+2. use
+
+update set - > template.update(sql, new Prepared...( ) )
+select id,name..... no ? -> template.query
+select * from ? -> template.queryForObject 
