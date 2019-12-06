@@ -1,0 +1,14 @@
+
++ write (insert into)
+- template.update(new  PreparedStatementCreator() ... )
+
++ delete ( delete )
+- template.update(sql,new  PreparedStatementSetter() ... )
+
++ reply ( insert into )
+- template.update(sql,new PreparedStatementSetter() .. )
+
+view 도 수정해준다
+"select * from mvc_board where bId = ?"
+- >
+ "select * from mvc_board where bId = "+strId;
