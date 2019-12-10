@@ -1,0 +1,14 @@
+
+getting started
+
+1. setting... sts4 and sts3 ( no alone )
+2. maven installed ... ok
+
+now start
+
+new > spring start > checked spring web > finsihed
+
+@RestController : i know, this class is Cotroller ! tell it
+@EnableAutoConfiguration : spring-boot default setting auto ! 
+@RequestMapping : i know, too. if ("/") you come in? -> return page
+
