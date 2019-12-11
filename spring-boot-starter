@@ -1,0 +1,7 @@
+- spring-boot starter 는 기본으로 지급하는거와 각각 분리해서 쓸수있는 것이 있다
+- 시작은 spring-boot-starter 로 한다
+- spring, .. 고유의 spring key 로 시작하면 안됨
+
+import addititonal configuration classes
+1. @ComponentScan - 하위에 Config annotation 하고 @bean 설정하기 or @Service , @Controller... setting
+2. @import(...class)
