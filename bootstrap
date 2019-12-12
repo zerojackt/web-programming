@@ -1,0 +1,11 @@
+use bootstrap
+
++ dependency jquery, webjars
++ add folders into spring-boot > resources > 
+/webjar/bootstrap/4.4.1/ here is copy-paste the bootstrap js, css folders
+and 
+html file is / static > here
+index.html ( main home page )and form.html ( sign up page )
+
++ add NavBar + edtitor this
++ add forms ( user Id, user password, user name )
