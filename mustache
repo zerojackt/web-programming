@@ -1,0 +1,17 @@
++use mustache
+{{}}
+
+@Controller
+
+@GetMapping("/test")
+public String test(String name, Model model) {
+model.addAttrbute("name",name) 
+return "test"; }
+
+-> address + ?name=zero
+-> test.html
+your name is {{name}} <br>
+
+>>>
+your name is zero
+
