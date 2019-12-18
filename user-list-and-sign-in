@@ -1,0 +1,56 @@
+
++ user list
+@Controller
+public class UserController {
+	
+	private ArrayList<User> users = new ArrayList<User>();
+	
+	
+	
+	@PostMapping("/create")
+	public String create(User user,Model model) {
+	
+		System.out.println("User :"+user);
+		users.add(user);
+		return "redirect:list";
+		
+	}
+	
+	@GetMapping("/list")
+	public String list(Model model) {
+		model.addAttribute("users",users);
+		
+		return "list";
+		
+	}
+
+}
+
+... html >
+
+{{#users}}
+			    <tr>
+			      <th scope="row">{{userId}}</th>
+			   
+			      <td>{{userName}}</td>
+			      <td>{{userEmail}}</td>
+			    </tr>
+			    {{/users}}
+
+
++ sign in
+
+<form id="signform" action="/create" method="post">
+
+id -> name
+name="userId"
+
++ make User class
+
+  private String userId;
+	private String userPassword;
+	private String userName;
+	private String userEmail;
+  
+  + setter and toString()
+
