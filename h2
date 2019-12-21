@@ -1,0 +1,3 @@
++ add @Entity + interface
++ @Id, @Colmn(nullable = false ) 으로 primary key 지정하기
++ arraylist 로 했던거 interface 로 다 바꿔주기 ( jpa )
