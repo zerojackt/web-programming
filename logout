@@ -1,0 +1,7 @@
+- login 에 따른 처리. login 전 이라면 login,signup 만 menu 에 보이도록
+  후라면 logout, 회원정보수정이 보이도록
+ 
+ - logout 기능 구현
+ 
+ - my-blog 에 sign up,in page 생성. controller 에 mapping .
+ 
