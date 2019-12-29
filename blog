@@ -1,0 +1,2 @@
+- blog 에 글쓰기기능, 글이 blog 에 보여지게 하게 하기. 를 했다
+- jdbtemplate 으로 할려다가 다시 jpa 로 복귀했다. 다음 project 에서 사용해야 할듯하다.
